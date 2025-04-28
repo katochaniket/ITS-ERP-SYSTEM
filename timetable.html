@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Timetables - ITS College ERP System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="html.css" />
+    <style>
+        table.timetable {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            background-color: white;
+            color: #333;
+        }
+        table.timetable th, table.timetable td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: center;
+        }
+        table.timetable th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            user-select: none;
+        }
+        table.timetable tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+        table.timetable tr:hover {
+            background-color: #e6f7ff;
+        }
+        body {
+            background: linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0 2rem 2rem 2rem;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: white;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        main section {
+            background: rgba(255, 255, 255, 0.1);
+            margin-bottom: 2rem;
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            color: black;
+        }
+        main section h2 {
+            margin-bottom: 1rem;
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ITS College ERP System - All Timetables</h1>
+        <nav>
+            <a href="dashboard.html" aria-label="Go to Dashboard">Dashboard</a>
+            <a href="faculty.html" aria-label="Go to Faculty Activity Tracker">Faculty</a>
+            <a href="student.html" aria-label="Go to Student Information Management">Students</a>
+            <a href="attendance.html" aria-label="Go to Attendance Monitoring">Attendance</a>
+            <a href="login.html" aria-label="Logout">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>BCA Course Teachers Timetable</h2>
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>9:00 - 10:00</td><td>Mr. Sharma</td><td>Mr. Verma</td><td>Mr. Sharma</td><td>Ms. Iyer</td><td>Mr. Verma</td></tr>
+                    <tr><td>10:00 - 11:00</td><td>Mr. Verma</td><td>Mr. Sharma</td><td>Mr. Verma</td><td>Mr. Sharma</td><td>Ms. Iyer</td></tr>
+                    <tr><td>11:00 - 12:00</td><td>Ms. Iyer</td><td>Mr. Sharma</td><td>Mr. Verma</td><td>Mr. Verma</td><td>Mr. Sharma</td></tr>
+                    <tr><td>12:00 - 1:00</td><td>Lunch Break</td><td>Lunch Break</td><td>Lunch Break</td><td>Lunch Break</td><td>Lunch Break</td></tr>
+                    <tr><td>1:00 - 2:00</td><td>Mr. Gupta</td><td>Mr. Gupta</td><td>Mr. Gupta</td><td>Mr. Gupta</td><td>Mr. Gupta</td></tr>
+                    <tr><td>2:00 - 3:00</td><td>Mr. Verma</td><td>Mr. Sharma</td><td>Mr. Verma</td><td>Mr. Sharma</td><td>Mr. Verma</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>BBA Course Teachers Timetable</h2>
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>9:00 - 10:00</td><td>Mr. Reddy</td><td>Ms. Kapoor</td><td>Mr. Reddy</td><td>Ms. Bhatia</td><td>Ms. Kapoor</td></tr>
+                    <tr><td>10:00 - 11:00</td><td>Ms. Kapoor</td><td>Mr. Reddy</td><td>Ms. Kapoor</td><td>Mr. Reddy</td><td>Ms. Bhatia</td></tr>
+                    <tr><td>11:00 - 12:00</td><td>Ms. Bhatia</td><td>Mr. Reddy</td><td>Ms. Kapoor</td><td>Ms. Kapoor</td><td>Mr. Reddy</td></tr>
+                    <tr><td>12:00 - 1:00</td><td>Lunch Break</td><td>Lunch Break</td><td>Lunch Break</td><td>Lunch Break</td><td>Lunch Break</td></tr>
+                    <tr><td>1:00 - 2:00</td><td>Mr. Mehta</td><td>Mr. Mehta</td><td>Mr. Mehta</td><td>Mr. Mehta</td><td>Mr. Mehta</td></tr>
+                    <tr><td>2:00 - 3:00</td><td>Ms. Kapoor</td><td>Mr. Reddy</td><td>Ms. Kapoor</td><td>Mr. Reddy</td><td>Ms. Kapoor</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>BCA Course Students Timetable</h2>
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>9:00 - 10:00</td><td>Math</td><td>Physics</td><td>Math</td><td>Chemistry</td><td>Physics</td></tr>
+                    <tr><td>10:00 - 11:00</td><td>Physics</td><td>Math</td><td>Physics</td><td>Math</td><td>Chemistry</td></tr>
+                    <tr><td>11:00 - 12:00</td><td>Chemistry</td><td>Math</td><td>Physics</td><td>Physics</td><td>Math</td></tr>
+                    <tr><td>12:00 - 1:00</td><td>Lunch Break</td><td>Lunch Break</td><td>Lunch Break</td><td>Lunch Break</td><td>Lunch Break</td></tr>
+                    <tr><td>1:00 - 2:00</td><td>Computer Science</td><td>Computer Science</td><td>Computer Science</td><td>Computer Science</td><td>Computer Science</td></tr>
+                    <tr><td>2:00 - 3:00</td><td>Physics Lab</td><td>Math Lab</td><td>Physics Lab</td><td>Math Lab</td><td>Physics Lab</td></tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>BBA Course Students Timetable</h2>
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>9:00 - 10:00</td><td>Accounting</td><td>Finance</td><td>Accounting</td><td>Marketing</td><td>Finance</td></tr>
+                    <tr><td>10:00 - 11:00</td><td>Finance</td><td>Accounting</td><td>Finance</td><td>Accounting</td><td>Marketing</td></tr>
+                    <tr><td>11:00 - 12:00</td><td>Marketing</td><td>Accounting</td><td>Finance</td><td>Finance</td><td>Accounting</td></tr>
+                    <tr><td>12:00 - 1:00</td><td>Lunch Break</td><td>Lunch Break</td><td>Lunch Break</td><td>Lunch Break</td><td>Lunch Break</td></tr>
+                    <tr><td>1:00 - 2:00</td><td>Management</td><td>Management</td><td>Management</td><td>Management</td><td>Management</td></tr>
+                    <tr><td>2:00 - 3:00</td><td>Finance Lab</td><td>Marketing Lab</td><td>Finance Lab</td><td>Marketing Lab</td><td>Finance Lab</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 ITS College of Professional Studies | ERP Project by Aniket Katoch
+    </footer>
+</body>
+</html>

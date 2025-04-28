@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - ITS College ERP System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="html.css" />
+</head>
+<body class="login">
+    <header>
+        <h1 onclick="scrollToHome()">ITS College ERP System</h1>
+            <nav>
+                <a href="index.html" aria-label="Go to Home Page">Home</a>
+                <a href="index.html#features" aria-label="Go to Features Section">Features</a>
+                <a href="login.html" aria-label="Go to Login Page" class="active">Login</a>
+                <a href="index.html#queryForm" aria-label="Go to Contact Page">Contact</a>
+            </nav>
+    </header>
+
+    <main>
+        <section id="login">
+            <h2>Login to Your Account</h2>
+            <form class="login-form" id="loginForm">
+                <div class="form-group" id="usernameLogin">
+                    <label for="usernameInput" id="usernameLabel">Username or Email</label>
+                    <input type="text" id="usernameInput" name="usernameInput" placeholder="Enter your username or email" required />
+                </div>
+                <div class="form-group" id="passwordLogin" style="position: relative;">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required />
+                    <span id="togglePassword" style="position: absolute; right: 10px; top: 38px; cursor: pointer; user-select: none;">&#128065;</span>
+                </div>
+                <button type="submit" class="btn" id="loginButton">Login</button>
+                <div class="forgot-password">
+                    <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+                </div>
+            </form>
+            <div class="container" id="forgotPasswordSection" style="display: none;">
+                <h2>Forgot Password</h2>
+                <div id="initial-section">
+                    <div class="form-group">
+                        <label for="email">Enter your Email or Username:</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email or username" required />
+                    </div>
+                    <button id="next-button">Next</button>
+                </div>
+
+                <div id="otp-section" style="display: none;">
+                    <h3>Enter OTP</h3>
+                    <div class="form-group">
+                        <label for="otp">OTP:</label>
+                        <input type="text" id="otp" name="otp" placeholder="Enter the OTP" required />
+                    </div>
+                    <button id="submit-button">Submit</button>
+                </div>
+
+                <div class="success-message">
+                    Your password has been reset successfully!
+                </div>
+
+                <div class="back-to-login">
+                    <a href="#" id="backToLogin">Back to Login</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 ITS College of Professional Studies | ERP Project by Aniket Katoch
+    </footer>
+
+    <script src="html.js"></script>
+</body>
+</html>
